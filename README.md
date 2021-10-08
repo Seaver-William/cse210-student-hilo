@@ -36,4 +36,8 @@ root                    (project root folder)
 ## Authors
 ---
 * TODO: Add your names and emails here
-# Jossue Daniel Ortiz - ort21013@byui.edu
+1.- Isaac Cruz ----- cru21010@byui.edu
+2.- William Seaver --- Sea16016@byui.edu
+3.- Kyle Southwick --- sou19009@byui.edu
+4.- Elie Mambou --- mam13003@byui.edu
+5.- Jossue Daniel Ortiz - ort21013@byui.edu
