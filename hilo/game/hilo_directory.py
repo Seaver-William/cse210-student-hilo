@@ -21,10 +21,11 @@ class Directory():
             # self.do_updates()
             self.do_outputs()
             self.card = Card()
-            if self.decide_to_play():
+            if self.decide_to_play() and self.can_continue():
                 pass
             else: 
                 return False
+            
 
     def get_inputs(self):
         pass
@@ -38,14 +39,14 @@ class Directory():
         """Outputs the flow of results
         """
         while self.can_continue:            
-            fetch_cart = self.card.display
-            fetch_cart = random.randint(1,13)
+            fetch_cart = self.card.get_random_num()
+            #fetch_cart = random.randint(1,13)
             print(f"\nThe card is: {fetch_cart}")
 
             hilo_choice = self.pick_hilo()
 
-            next_card = self.card.guess_card
-            next_card = random.randint(1,13)
+            next_card = self.card.get_random_num()
+            #next_card = random.randint(1,13)
 
             if hilo_choice =='h' and self.card.guess_high(fetch_cart,next_card):
                 self.score += 100
